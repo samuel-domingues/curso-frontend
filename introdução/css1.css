@@ -1,0 +1,68 @@
+body{
+    background-color: #aaa;
+}
+
+h1{
+    color:red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+h2{
+    font-size: 40px;
+    font-style: italic;
+    text-decoration: underline;
+    background-color: #0ff;
+}
+
+h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: normal;
+}
+
+p{
+    font-size: 20px;
+    text-indent: 20px;
+    color: #00f;
+    font-variant: small-caps;
+}
+
+a{
+    padding: 3px;
+}
+
+a:link{
+    text-decoration: none;
+    font-variant: normal;
+    color: #f00;
+}
+a:visited{
+    color: #800080;
+}
+a:hover{
+    background-color: #ccc;
+}
+a:active{
+    color: #000;
+}
+.lu1{
+    list-style-type: disc;
+}
+.lu2{
+    list-style-type: square;
+    list-style-position: inside;
+}
+.lu3{
+    list-style-type: circle;
+}
+.lo1{
+    list-style-type: decimal;
+}
+.lo2{
+    list-style-type: lower-latin;
+}
+.lo3{
+    list-style-type: upper-roman;
+}

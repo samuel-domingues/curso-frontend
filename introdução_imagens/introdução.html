@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Samuel Domingues">
+    <meta name="description" content="trabalhando com imagens">
+    <title>Imagens</title>
+
+    <style>
+        body{
+            font-size: 30px;
+            font-family: sans-serif;
+            width: 700px;
+            margin: auto;
+
+            background-image: url(imagens/bg.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: bottom;
+            background-size: cover;
+        }
+
+        p{
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .img_logo{
+            width: 400px;
+        }
+
+        .img_html{
+            float: left;
+        }
+        .img_css{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando imagens</h1>
+    <h2>iamgens vetoriais vs bitmap</h2>
+
+    <img src="imagens/logo_ser-frontend-ico.svg" class="img_logo" alt="imagem vetorial logo serfrontend">
+    <br>
+    <img src="imagens/logo_ser-frontend-ico.png" class="img_logo" alt="imagem bitmap logo serfrontend">
+     
+    <h2>imagens transparentes</h2>
+
+    <img src="imagens/logo_ser-frontend-ico-transparente.gif" alt="imagem transparente em gif">
+    <br>
+    <img src="imagens/logo_ser-frontend-ico-transparente.png" alt="imagem transparente em png">
+
+    <h2>gif animado</h2>
+
+    <img src="imagens/walk.gif" alt="gif animado mulher andando">
+    <a href=""></a>
+
+    <h2>floats</h2>
+    <img src="imagens/html5.png" alt="logotipo do html" class="img_html">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo laudantium ipsa totam repellendus vero provident nam, modi alias est quia repellat magni amet officiis ullam, nihil, quaerat aspernatur sunt voluptas nostrum voluptates maiores. Et tempora dicta blanditiis soluta veritatis accusantium aut! Consequuntur asperiores libero eligendi quia ipsum veniam repudiandae quod.</p>
+
+    <img src="imagens/css3.png" alt="logotipo do css" class="img_css">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem vero ab obcaecati ratione fuga quis autem accusamus odio veritatis neque. Ea quam ipsa aspernatur praesentium, error eos, laudantium voluptas consequatur provident illo in corrupti deserunt, eaque facilis eligendi pariatur distinctio. Ipsum voluptatem delectus voluptatum modi quam iste asperiores aut omnis.</p>
+
+</body>
+</html>

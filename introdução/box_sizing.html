@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="=Samuel Domingues">
+    <title>Box Sizing</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        h1{
+            background-color: #009124;
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+        }
+        p{
+            background-color: #ccc;
+            width: 500px;
+        }
+        .pa{
+            padding: 20px;
+        }
+        .bo{
+            border: 10px solid #000;
+        }
+        .bb{
+            box-sizing: border-box;
+        }
+        b{
+            padding: 20px;
+            background-color: #f00;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Sizing</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, praesentium labore non voluptates quod ab perspiciatis cumque vitae sint perferendis beatae. Ab corrupti aliquid maiores vel, minus reprehenderit pariatur quas iste sunt, quos architecto et autem ipsam voluptate sapiente. Sequi ex exercitationem voluptatum eveniet, illum necessitatibus eum labore iusto quisquam!</p>
+    <p class="pa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, praesentium labore non voluptates quod ab perspiciatis cumque vitae sint perferendis beatae. Ab corrupti aliquid maiores vel, minus reprehenderit pariatur quas iste sunt, quos architecto et autem ipsam voluptate sapiente. Sequi ex exercitationem voluptatum eveniet, illum necessitatibus eum labore iusto quisquam!</p>
+    <p class="pa bo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, praesentium labore non voluptates quod ab perspiciatis cumque vitae sint perferendis beatae. Ab corrupti aliquid maiores vel, minus reprehenderit pariatur quas iste sunt, quos architecto et autem ipsam voluptate sapiente. Sequi ex exercitationem voluptatum eveniet, illum necessitatibus eum labore iusto quisquam!</p>
+    <p class="pa bo bb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, praesentium labore non voluptates quod ab perspiciatis cumque vitae sint perferendis beatae. Ab corrupti aliquid maiores vel, minus reprehenderit pariatur quas iste sunt, quos architecto et autem ipsam voluptate sapiente. Sequi ex exercitationem voluptatum eveniet, illum necessitatibus eum labore iusto quisquam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, praesentium labore non voluptates quod <b>Lorem ipsum dolor sit amet.</b> perferendis beatae. Ab corrupti aliquid maiores vel, minus reprehenderit pariatur quas iste sunt, quos architecto et autem ipsam voluptate sapiente. Sequi ex exercitationem voluptatum eveniet, illum necessitatibus eum labore iusto quisquam!</p>
+</body>
+</html>
