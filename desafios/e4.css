@@ -1,0 +1,73 @@
+.body{
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body--header{
+    color: rgb(0, 0, 0, 0.65);
+    text-align: center;
+    margin: 130px auto 0;
+}
+
+.body--main{
+    width: 500px;
+    height: 400px;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #999;
+}
+
+.body--main--article{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0, 0.65);
+}
+
+.body--main--article:hover{
+    background-color: #999;
+}
+
+.profile-picture img{
+    width: 80px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.text{
+    width: 300px;
+    margin: 0;
+}
+
+.text .name{
+    margin: 0 0 5px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 25px;
+}
+
+.text .email{
+    margin: 0 0 35px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+}
+
+.buttons img{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    gap: 5px;
+}
+
+.body--main--article:hover .buttons{
+    opacity: 1;
+}
