@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background: url(../../imagens/bg-3.jpg) no-repeat;
+  background: url(../images/bg-3.jpg) no-repeat;
   background-position: top;
   background-size: cover;
   height: 650px;
