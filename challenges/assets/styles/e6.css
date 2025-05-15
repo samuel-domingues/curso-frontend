@@ -1,0 +1,149 @@
+:root{
+    --header-height: 4.5rem;
+}
+
+@font-face {
+    font-family: Roboto;
+    src:
+        local("Roboto Serif")
+        local("Roboto-Serif")
+        url(../fonts/Roboto-Regular.woff2) format("woff2"),
+        url(../fonts/Roboto-Regular.woff) format("woff"),
+        url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: ViaodaLibre;
+    src:
+        local("ViaodaLibre Serif")
+        local("ViaodaLibre-Serif")
+        url(../fonts/ViaodaLibre-Regular.woff2) format('woff2'),
+        url(../fonts/ViaodaLibre-Regular.woff) format('woff'),
+        url(../fonts/ViaodaLibre-Regular.ttf) format('truetype');
+}
+
+.page{
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/top_model.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: var(--header-height);
+}
+
+.page--header{
+    display: flex;
+    background-color: #162028;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--header-height);
+}
+
+.page--header--title{
+    color: white;
+    font-family: ViaodaLibre;
+    font-size: 3rem;
+    margin:0 0 0 15rem;
+    font-weight: normal;
+}
+
+.page--header--buttons{
+    display: flex;
+    font-family: Roboto;
+    text-transform: uppercase;
+    margin: 0 4rem;
+    align-items: center;
+    gap: 5rem;
+    list-style-type: none;
+    letter-spacing: 0.25rem;
+
+}
+
+p{
+    font-family: Roboto;
+    color: #555;
+}
+
+a{
+    text-decoration: none;
+    color: #425564;
+}
+
+.page--main--top{
+    margin: 55rem auto 0;
+    text-align: center;
+    width: 70%;
+}
+
+.page--main--top--sub-title{
+    font-family: ViaodaLibre;
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+.page--main--top p{
+    line-height: 2rem;
+}
+
+.page--main--top--models{
+    margin: 6rem 5rem;
+    font-family: Roboto;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.page--main--top--models h3{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.page--main--bottom{
+    /* width: 100ch; */
+    background-image: url(../images/bg_detail.png);
+    background-color: #003d52;
+    background-size: auto;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    
+    padding: 10rem;
+    color: white;
+}
+
+.page--main--bottom h2{
+    font-size: 4.5rem;
+    font-family: ViaodaLibre;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.page--main--bottom p{
+    color: white;
+    width: 50%;
+    line-height: 2rem;
+}
+
+.page--footer{
+    margin: 0;
+    background-color: #0b171f;
+    color: #6f8597;
+    padding: 1rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+
+
+/* Cores utilizadas no projeto:
+
+Background Top Header: #162028
+
+Cor do texto no menu: #425564
+
+Cor dos textos: #555
+
+Cor de fundo do box com imagem de detalhe: #003d52
+
+Cor de fundo do footer: #0b171f
+
+Cor de texto do footer: #6f8597 */
