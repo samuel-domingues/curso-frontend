@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Tabelas Details Popover</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+
+        /* css da tabela */
+
+        table{
+            width: 80%;
+            margin: auto;
+            background-color: beige;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th{
+            background-color: rgb(204, 204, 168);
+        }
+
+        .centralize{
+            text-align: center;
+        }
+
+        /* css de details */
+
+        details summary{
+            cursor: pointer;
+        }
+
+        details[open]{
+            background-color: cyan;
+        }
+
+        /* css de popover */
+
+        :popover-open{
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        ::backdrop{
+            background-color: rgba(137, 43, 226, 0.541);
+        }
+
+        .divi :popover-open{
+            inset: unset;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela de preços de cursos</caption>
+
+        <thead>
+            <tr>
+                <th>Area</th>
+                <th>curso</th>
+                <th>investimento</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="3" class="centralize">Design</td>
+                <td>InDesingn</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>Photoshop</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>Ilustrator</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <td rowspan="4" class="centralize">Development</td>
+                <td>HTML</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>Javascript</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3" class="centralize">Valores sujeitos a alteração sem previo aviso</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br><hr><br>
+
+    <details open>
+        <summary>abrir isso 1</summary>
+        <p>olha o texto aq escondido 1</p>
+    </details>
+
+    <details>
+        <summary>abrir isso 2</summary>
+        <p>olha o texto aq escondido 2</p>
+    </details>
+
+    <br><hr><br>
+
+    <button popovertarget="pop1">popover auto (default)</button>
+    <div id="pop1" popover>este texto so aparece ao clicar no botão</div>
+    <br><br>
+    <button popovertarget="pop2">popover manual</button>
+    <div id="pop2" popover="manual">este texto não fecha ao clicar fora</div>
+    <br><br>
+    <button popovertarget="pop3" popovertargetaction="show">abre popover</button>
+    <button popovertarget="pop3" popovertargetaction="hide">fecha popover</button>
+    <div id="pop3" popover="manual">este texto e estranho</div>
+    <br><br>
+    <div class="divi">
+        <button popovertarget="pop4">popover novo</button>
+        <div id="pop4" popover>este texto ta diferente</div>
+    </div>
+    <br>
+    <button popovertarget="pop5">botão?</button>
+    <div id="pop5" popover="manual">
+        <button popovertarget="pop6">outro?</button>
+        <div id="pop6" popover>este texto ta escondido</div>
+    </div>
+
+
+</body>
+</html>

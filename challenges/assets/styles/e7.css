@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Roboto;
+    src:
+        local("Roboto Serif")
+        local("Roboto-Serif")
+        url(../fonts/Roboto-Regular.woff2) format("woff2"),
+        url(../fonts/Roboto-Regular.woff) format("woff"),
+        url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: roboto;
+}
+
+.page{
+    background-color: #3a68b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 98vh;
+}
+
+.page--main{
+    background-color: white;
+    padding: 2em;
+    box-shadow: -.8em 0 0 rgba(0, 0, 0, .4);
+    min-width: 50em;
+    max-width: 80vb;
+}
+
+.page--main--form{
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.page--main--form--title{
+    font-size: 3em;
+    color: #3a68b7;
+    padding: .6em 0 .2em;
+}
+
+.page--main--form--text{
+    font-size: 1.6em;
+    color: rgba(0, 0, 0, .6);
+}
+
+.page--main--form--input{
+    font-size: 1.6em;
+    padding: .5em 0;
+    margin-bottom: .8em;
+    border: none;
+    border-bottom: .1em solid #3a68b7;
+    transition: padding .2s ease;
+}
+
+.page--main--form--input:focus{
+    outline: .1em solid #3a68b7;
+    padding: .5em .2em;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+}
+
+.btn_inf{
+    display: flex;
+    align-items: center;
+}
+
+.btn--sub{
+    background-color: #3a68b7;
+    color: white;
+    font-size: 1em;
+    padding: .6em 1.1em;
+    border: none;
+    border-radius: .2em;
+    text-transform: uppercase;
+}
+
+.btn--page-sign{
+    background-color: white;
+    color: #3a68b7;
+    font-size: 1em;
+    padding: .6em 1.1em;
+    border: none;
+    border-radius: .2em;
+    text-transform: uppercase;
+}
+
+.btn--link{
+    text-transform: none;
+    font-size: 0.8em;
+}
